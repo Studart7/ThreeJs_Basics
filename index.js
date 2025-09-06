@@ -27,7 +27,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 //Geometria
-const geometry = new THREE.IcosahedronGeometry(1, 4);
+const geometry = new THREE.BoxGeometry(1, 1, 1); //Criando um cubo
 const material = new THREE.MeshStandardMaterial({ 
     color: 0xffffff, 
     flatShading: true
